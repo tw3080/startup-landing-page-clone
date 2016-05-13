@@ -1,9 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: lightgray;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #838994;
-  letter-spacing: 0.03em;
 }
 
 div {
@@ -17,16 +20,30 @@ div {
 
 .top-navigation .links {
   float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #838994;
+  margin-top: 25px;
 }
 
 .top-navigation .links li {
   display: inline-block;
+  margin-left: 25px;
 }
 
-.top-navigation > .content {
+.top-navigation .links > .active {
+  color: #4c5058;
+  font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+  color: #4c5058;
+  cursor: pointer;
+}
+
+.content {
   width: 970px;
   height: 70px;
   margin: 0 auto;
   padding: 0px 15px;
-  box-sizing: border-box;
 }
