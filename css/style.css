@@ -15,6 +15,26 @@ div {
   border: 1px solid #000;
 }
 
+/* Custom Buttons */
+button {
+  width: 9.688rem;
+  background-color: #f15a29;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  border: none;
+}
+
 /* Navigation Section */
 .top-navigation {
   background-color: #fff;
@@ -48,23 +68,29 @@ div {
   padding: 0px 15px;
 }
 
+.content h1,
+h3 {
+  color: #fff;
+  font-weight: normal;
+}
+
 .introduction {
   background-image: url('../images/first-background copy.jpg');
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 45.938rem;
+  text-align: center;
+  overflow: auto;
 }
 
-/* Custom Buttons */
+.introduction h1 {
+  margin-top: 17.5rem;
+  margin-bottom: 0;
+  font-size: 3.125rem;
+}
 
-.buttons {
-  width: 9.688rem;
-  background-color: #f15a29;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.125rem;
-  padding: 1rem 1.5rem;
-  border: none;
-  border-radius: 4px;
+.introduction h3 {
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
 }
