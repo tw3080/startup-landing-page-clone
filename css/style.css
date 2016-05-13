@@ -6,13 +6,13 @@ html {
 }
 
 body {
-  background-color: lightgray;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
 div {
   border: 1px solid #000;
+  display: block;
 }
 
 /* Custom Buttons */
@@ -29,15 +29,15 @@ button {
 
 button:hover {
   cursor: pointer;
-}
-
-button:focus {
-  border: none;
+  background-color: #d9400e;
 }
 
 /* Navigation Section */
 .top-navigation {
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .top-navigation .links {
@@ -65,17 +65,18 @@ button:focus {
   width: 970px;
   height: 70px;
   margin: 0 auto;
-  padding: 0px 15px;
+  padding: 0px 15px;-
 }
 
 .content h1,
 h3 {
   color: #fff;
   font-weight: normal;
+  text-align: center;
 }
 
 .introduction {
-  background-image: url('../images/first-background copy.jpg');
+  background-image: url('../images/first-background.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,4 +94,43 @@ h3 {
 .introduction h3 {
   margin-top: 1.25rem;
   font-size: 1.563rem;
+}
+
+/* main section */
+.cases {
+  text-align: center;
+}
+
+.cases h2 {
+  margin: 1.625rem 0 3.125rem;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+/*
+.cases .devices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33333%;
+  flex-direction: row;
+}
+*/
+
+.cases .devices {
+  width: 26%;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  /* styles to assist with debugging */
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 4em;
+}
+
+.cases .devices h3 {
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #000;
+  margin: 2.5rem 0px 1.875rem;
 }
