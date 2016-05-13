@@ -1,5 +1,9 @@
 body {
   background-color: lightgray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #838994;
+  letter-spacing: 0.03em;
 }
 
 div {
@@ -7,13 +11,22 @@ div {
 }
 
 /* Navigation Section */
-
 .top-navigation {
   background-color: #fff;
+}
+
+.top-navigation .links {
+  float: right;
+}
+
+.top-navigation .links li {
+  display: inline-block;
 }
 
 .top-navigation > .content {
   width: 970px;
   height: 70px;
-  margin 0 auto;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: border-box;
 }
